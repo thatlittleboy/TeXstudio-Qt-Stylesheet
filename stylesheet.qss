@@ -1,0 +1,650 @@
+/*================================================================
+QWidget
+================================================================*/
+QWidget {
+		color: #eff0f1;
+		background-color: #272a2d;
+    selection-background-color: #db1c49;
+    selection-color: #eff0f1;
+}
+
+QWidget:item:hover {
+    background-color: #18465d;
+    color: #eff0f1;
+}
+
+QWidget:item:selected {
+    background-color: #18465d;
+}
+
+/*================================================================
+QCheckBox/QGroupBox
+================================================================*/
+QCheckBox {
+    spacing: 5px;
+    outline: none;
+    color: #eff0f1;
+    margin-bottom: 2px;
+}
+
+QCheckBox:disabled {
+    color: #76797C;
+}
+
+QCheckBox::indicator,
+QGroupBox::indicator {
+    width: 18px;
+    height: 18px;
+}
+
+QGroupBox::indicator {
+    margin-left: 2px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked.png);
+}
+
+QCheckBox::indicator:unchecked:hover,
+QCheckBox::indicator:unchecked:focus,
+QCheckBox::indicator:unchecked:pressed,
+QGroupBox::indicator:unchecked:hover,
+QGroupBox::indicator:unchecked:focus,
+QGroupBox::indicator:unchecked:pressed {
+    border: none;
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked_focus.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked.png);
+}
+
+QCheckBox::indicator:checked:hover,
+QCheckBox::indicator:checked:focus,
+QCheckBox::indicator:checked:pressed,
+QGroupBox::indicator:checked:hover,
+QGroupBox::indicator:checked:focus,
+QGroupBox::indicator:checked:pressed {
+    border: none;
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked_focus.png);
+}
+
+QCheckBox::indicator:indeterminate {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_indeterminate.png);
+}
+
+QCheckBox::indicator:indeterminate:focus,
+QCheckBox::indicator:indeterminate:hover,
+QCheckBox::indicator:indeterminate:pressed {
+    image: url(C:/Users/franc/AppData/Roaming/TeXstudio/rc/checkbox_indeterminate_focus.png);
+}
+
+QCheckBox::indicator:checked:disabled,
+QGroupBox::indicator:checked:disabled {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked_disabled.png);
+}
+
+QCheckBox::indicator:unchecked:disabled,
+QGroupBox::indicator:unchecked:disabled {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked_disabled.png);
+}
+
+/*================================================================
+QMenuBar
+================================================================*/
+QMenuBar {
+    color: #eff0f1;
+		background-color: #373b3f;
+}
+
+QMenuBar::item {
+    background: transparent;
+}
+
+/*================================================================
+QMenu
+================================================================*/
+QMenu {
+    border: 1px solid #76797C;
+    color: #eff0f1;
+    margin: 2px;
+}
+
+QMenu::separator {
+    height: 2px;
+    background: #76797C;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*================================================================
+QToolbar
+================================================================*/
+QToolBar {
+    border: 1px transparent #393838;
+    background: 1px solid #31363b;
+    font-weight: bold;
+}
+
+QToolBar::handle:horizontal {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/Hmovetoolbar.png);
+}
+
+QToolBar::handle:vertical {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/Vmovetoolbar.png);
+}
+
+QToolBar::separator:horizontal {
+    width: 2px;
+    margin: 3px 10px;
+    background-color: #76797C;
+}
+
+QToolBar::separator:vertical {
+    height: 2px;
+    margin: 10px 3px;
+    background-color: #76797C;
+}
+
+/*================================================================
+QScrollBar
+================================================================*/
+QScrollBar:horizontal {
+    height: 35px;
+    margin: 3px 30px 3px 30px;
+    border: 1px transparent #2A2929;
+    border-radius: 4px;
+    background-color: #2A2929;
+}
+
+QScrollBar::handle:horizontal {
+    background-color: #605F5F;
+    min-width: 15px;
+    border-radius: 4px;
+}
+
+QScrollBar::add-line:horizontal {
+    margin: 0px 3px 0px 3px;
+    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/right_arrow_disabled.png);
+    width: 20px;
+    height: 20px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    margin: 0px 3px 0px 3px;
+    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/left_arrow_disabled.png);
+    height: 20px;
+    width: 20px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:horizontal:hover,
+QScrollBar::add-line:horizontal:on {
+    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/right_arrow.png);
+    height: 20px;
+    width: 20px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal:hover,
+QScrollBar::sub-line:horizontal:on {
+    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/left_arrow.png);
+    height: 20px;
+    width: 20px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::up-arrow:horizontal,
+QScrollBar::down-arrow:horizontal {
+    background: none;
+}
+
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+QScrollBar:vertical {
+    background-color: #2A2929;
+    width: 35px;
+    margin: 30px 3px 30px 3px;
+    border: 1px transparent #2A2929;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background-color: #605F5F;
+    min-height: 15px;
+    border-radius: 4px;
+}
+
+QScrollBar::sub-line:vertical {
+    margin: 3px 0px 3px 0px;
+    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/up_arrow_disabled.png);
+    height: 20px;
+    width: 20px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical {
+    margin: 3px 0px 3px 0px;
+    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/down_arrow_disabled.png);
+    height: 20px;
+    width: 20px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical:hover,
+QScrollBar::sub-line:vertical:on {
+    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/up_arrow.png);
+    height: 20px;
+    width: 20px;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical:hover,
+QScrollBar::add-line:vertical:on {
+    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/down_arrow.png);
+    height: 20px;
+    width: 20px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::up-arrow:vertical,
+QScrollBar::down-arrow:vertical {
+    background: none;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+/*================================================================
+QTabBar
+================================================================*/
+QTabBar {
+    qproperty-drawBase: 0; /* important */
+    background-color: transparent;
+}
+
+/* Workaround for QTabBars created from docked QDockWidgets which don't draw the border if not set and reseted as follows: */
+QTabBar {
+    border-top: 1px transparent #76797C;  /* set color for all QTabBars */
+}
+QDockWidget QTabBar {
+    border-color: transparent; /* set color for all QTabBars but ones created from QDockWidget */
+}
+QDialog QTabBar {
+    border-color: transparent; /* set color for QTabBars inside Preferences dialog */
+}
+/* end fix */
+
+QTabBar::close-button {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close.png);
+    background: transparent;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+QTabBar::close-button:hover {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close-hover.png);
+    background: transparent;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+QTabBar::close-button:pressed {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close-pressed.png);
+    background: transparent;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+/* TOP TABS */
+
+QTabBar::tab:top {
+    color: #eff0f1;
+    border: 1px solid #76797C;
+    border-bottom: 1px transparent black;
+    background-color: #31363b;
+    padding: 5px;
+    min-width: 50px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+QTabBar::tab:top:selected {
+    color: #eff0f1;
+    background-color: #54575B;
+    border: 1px transparent #76797C;
+    border-bottom: 2px solid #3daee9;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+QTabBar::tab:top:!selected:hover {
+    background-color: #18465d;
+}
+
+/*================================================================
+QDockWidget -- NOT WORKING
+================================================================*/
+QDockWidget {
+    background: #db1c49;
+    border: 1px solid #403F3F;
+    titlebar-close-icon: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close.png);
+    titlebar-normal-icon: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/undock.png);
+}
+
+QDockWidget::close-button,
+QDockWidget::float-button {
+    border: 1px solid transparent;
+    border-radius: 2px;
+    background: transparent;
+}
+
+QDockWidget::close-button:hover,
+QDockWidget::float-button:hover {
+    background: #db1c49;
+}
+
+QDockWidget::close-button:pressed,
+QDockWidget::float-button:pressed {
+    padding: 1px -1px -1px 1px;
+    background: rgba(255, 255, 255, 10);
+}
+
+/*================================================================
+QTreeView, QListView
+================================================================*/
+QTreeView,
+QListView {
+    border: 1px solid #76797C;
+    background-color: #232629;
+}
+
+QTreeView:branch:selected,
+QTreeView:branch:hover {
+    background: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
+}
+
+QTreeView::branch:has-siblings:!adjoins-item {
+    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
+}
+
+QTreeView::branch:has-siblings:adjoins-item {
+    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
+}
+
+QTreeView::branch:has-children:!has-siblings:closed,
+QTreeView::branch:closed:has-children:has-siblings {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/branch_closed.png);
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/branch_open.png);
+}
+
+QTreeView::branch:has-children:!has-siblings:closed:hover,
+QTreeView::branch:closed:has-children:has-siblings:hover {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/branch_closed-on.png);
+}
+
+QTreeView::branch:open:has-children:!has-siblings:hover,
+QTreeView::branch:open:has-children:has-siblings:hover {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/branch_open-on.png);
+}
+
+QListView::item:!selected:hover,
+QTreeView::item:!selected:hover {
+    background: #18465d;
+    outline: 0;
+    color: #eff0f1
+}
+
+QListView::item:selected:hover,
+QTreeView::item:selected:hover {
+    background: #287399;
+    color: #eff0f1;
+}
+
+QTreeView::indicator:checked,
+QListView::indicator:checked {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked.png);
+}
+
+QTreeView::indicator:unchecked,
+QListView::indicator:unchecked {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked.png);
+}
+
+QTreeView::indicator:checked:hover,
+QTreeView::indicator:checked:focus,
+QTreeView::indicator:checked:pressed,
+QListView::indicator:checked:hover,
+QListView::indicator:checked:focus,
+QListView::indicator:checked:pressed {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked_focus.png);
+}
+
+QTreeView::indicator:unchecked:hover,
+QTreeView::indicator:unchecked:focus,
+QTreeView::indicator:unchecked:pressed,
+QListView::indicator:unchecked:hover,
+QListView::indicator:unchecked:focus,
+QListView::indicator:unchecked:pressed {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked_focus.png);
+}
+
+/*================================================================
+QPushButton
+================================================================*/
+QPushButton {
+    color: #eff0f1;
+    background-color: #31363b;
+    border-width: 1px;
+    border-color: #76797C;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 2px;
+    outline: none;
+}
+
+QPushButton:disabled {
+    background-color: #31363b;
+    border-width: 1px;
+    border-color: #454545;
+    border-style: solid;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+    color: #454545;
+}
+
+QPushButton:focus {
+    background-color: #3daee9;
+    color: white;
+}
+
+QPushButton:pressed {
+    background-color: #3daee9;
+    padding-top: -15px;
+    padding-bottom: -17px;
+}
+
+/*================================================================
+QComboBox
+================================================================*/
+QComboBox {
+    selection-background-color: #3daee9;
+    border-style: solid;
+    border: 1px solid #76797C;
+    border-radius: 2px;
+    padding: 5px;
+    min-width: 75px;
+}
+
+QPushButton:checked {
+    background-color: #76797C;
+    border-color: #6A6969;
+}
+
+QComboBox:hover,
+QPushButton:hover,
+QAbstractSpinBox:hover,
+QLineEdit:hover,
+QTextEdit:hover,
+QPlainTextEdit:hover,
+QAbstractView:hover,
+QTreeView:hover {
+    border: 1px solid #3daee9;
+    color: #eff0f1;
+}
+
+QComboBox:on {
+    padding-top: 3px;
+    padding-left: 4px;
+    selection-background-color: #4a4a4a;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #232629;
+    border-radius: 2px;
+    border: 1px solid #76797C;
+    selection-background-color: #18465d;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 35px;
+    border-left-width: 0px;
+    border-left-color: darkgray;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox::down-arrow {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/down_arrow_disabled.png);
+}
+
+QComboBox::down-arrow:on,
+QComboBox::down-arrow:hover,
+QComboBox::down-arrow:focus {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/down_arrow.png);
+}
+
+/*================================================================
+QHeaderView
+================================================================*/
+QHeaderView {
+    background-color: #31363b;
+    border: 1px transparent;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+QHeaderView::section {
+    background-color: #31363b;
+    color: #eff0f1;
+    padding: 5px;
+    border: 1px solid #76797C;
+    border-radius: 0px;
+    text-align: center;
+}
+
+QHeaderView::section::vertical::first,
+QHeaderView::section::vertical::only-one {
+    border-top: 1px solid #76797C;
+}
+
+QHeaderView::section::vertical {
+    border-top: transparent;
+}
+
+QHeaderView::section::horizontal::first,
+QHeaderView::section::horizontal::only-one {
+    border-left: 1px solid #76797C;
+}
+
+QHeaderView::section::horizontal {
+    border-left: transparent;
+}
+
+QHeaderView::section:checked {
+    color: white;
+    background-color: #31363B;
+}
+
+/*================================================================
+QTableWidget
+================================================================*/
+QTableWidget {
+		background-color: #232629;
+    gridline-color: #31363b;
+}
+
+QTableWidget::item {
+		outline-style: none;
+		color: #eff0f1;
+		background: #31363b;
+		border: none;
+    border-bottom: 1px solid #31363b;
+}
+
+QTableWidget::item:hover {
+    background: #E0401E;
+}
+
+/*================================================================
+QTableView
+================================================================*/
+QTableView {
+    border: 1px solid #76797C;
+    gridline-color: #31363b;
+    background-color: #232629;
+}
+
+QTableView,
+QHeaderView {
+    border-radius: 0px;
+}
+
+QTableView::item:pressed,
+QListView::item:pressed,
+QTreeView::item:pressed {
+    background: #18465d;
+    color: #eff0f1;
+}
+
+QTableView::item:selected:active,
+QTreeView::item:selected:active,
+QListView::item:selected:active {
+    background: #287399;
+    color: #eff0f1;
+}
+
+QTableCornerButton::section {
+    background-color: #31363b;
+    border: 1px transparent #76797C;
+    border-radius: 0px;
+}
