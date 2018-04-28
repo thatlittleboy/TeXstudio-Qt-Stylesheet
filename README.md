@@ -18,3 +18,4 @@ Stylesheet does not set (i) the background colour and syntax highlighting of the
 - Symbols side panel and a few icons are black (on transparent background?), thus are hard to see with the dark background of everything else (c.f. `Math -> Math Accents`). Whereas others (c.f. `LaTeX -> Font Styles`) are fine;
 - Table in `Config TeXstudio -> Syntax Highlighting` is a mess.. Not sure how much of it can be influenced/fixed by QSS;
 - Some pop-up dialogs still not inheriting the QSS, (c.f. `Edit Macros` dialog, `Select Color` dialog);
+- The "right-click context menu" not inheriting QSS as well;
