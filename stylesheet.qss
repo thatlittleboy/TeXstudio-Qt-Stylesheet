@@ -12,47 +12,47 @@ Colour scheme used:
 QWidget
 ================================================================*/
 QWidget {
-		color: #eff0f1;
-		background-color: #272a2d;
-    selection-background-color: #db1c49;
-    selection-color: #eff0f1;
+	color: #eff0f1;
+	background-color: #272a2d;
+	selection-background-color: #db1c49;
+	selection-color: #eff0f1;
 }
 
 QWidget::item:hover {
-    background-color: #18465d;
-    color: #eff0f1;
+	background-color: #18465d;
+	color: #eff0f1;
 }
 
 QWidget::item:selected {
-    background-color: #18465d;
+	background-color: #18465d;
 }
 
 /*================================================================
 QCheckBox/QGroupBox
 ================================================================*/
 QCheckBox {
-    spacing: 5px;
-    outline: none;
-    color: #eff0f1;
-    margin-bottom: 2px;
+	spacing: 5px;
+	outline: none;
+	color: #eff0f1;
+	margin-bottom: 2px;
 }
 
 QCheckBox:disabled {
-    color: #76797C;
+	color: #76797C;
 }
 
 QCheckBox::indicator,
 QGroupBox::indicator {
-    width: 18px;
-    height: 18px;
+	width: 18px;
+	height: 18px;
 }
 
 QGroupBox::indicator {
-    margin-left: 2px;
+	margin-left: 2px;
 }
 
 QCheckBox::indicator:unchecked {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked.png);
 }
 
 QCheckBox::indicator:unchecked:hover,
@@ -61,12 +61,12 @@ QCheckBox::indicator:unchecked:pressed,
 QGroupBox::indicator:unchecked:hover,
 QGroupBox::indicator:unchecked:focus,
 QGroupBox::indicator:unchecked:pressed {
-    border: none;
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked_focus.png);
+	border: none;
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked_focus.png);
 }
 
 QCheckBox::indicator:checked {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked.png);
 }
 
 QCheckBox::indicator:checked:hover,
@@ -75,358 +75,362 @@ QCheckBox::indicator:checked:pressed,
 QGroupBox::indicator:checked:hover,
 QGroupBox::indicator:checked:focus,
 QGroupBox::indicator:checked:pressed {
-    border: none;
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked_focus.png);
+	border: none;
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked_focus.png);
 }
 
 QCheckBox::indicator:indeterminate {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_indeterminate.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_indeterminate.png);
 }
 
 QCheckBox::indicator:indeterminate:focus,
 QCheckBox::indicator:indeterminate:hover,
 QCheckBox::indicator:indeterminate:pressed {
-    image: url(C:/Users/franc/AppData/Roaming/TeXstudio/rc/checkbox_indeterminate_focus.png);
+	image: url(C:/Users/franc/AppData/Roaming/TeXstudio/rc/checkbox_indeterminate_focus.png);
 }
 
 QCheckBox::indicator:checked:disabled,
 QGroupBox::indicator:checked:disabled {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked_disabled.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked_disabled.png);
 }
 
 QCheckBox::indicator:unchecked:disabled,
 QGroupBox::indicator:unchecked:disabled {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked_disabled.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked_disabled.png);
 }
 
 /*================================================================
 QMenuBar
 ================================================================*/
 QMenuBar {
-    color: #eff0f1;
-		background-color: #373b3f;
+	color: #eff0f1;
+	background-color: #373b3f;
 }
 
 QMenuBar::item {
-    background: transparent;
+	background: transparent;
 }
 
 /*================================================================
 QMenu
 ================================================================*/
 QMenu {
-    border: 1px solid #76797C;
-    color: #eff0f1;
-    margin: 2px;
+	border: 1px solid #76797C;
+	color: #eff0f1;
+	margin: 2px;
 }
 
 QMenu::separator {
-    height: 2px;
-    background: #76797C;
-    margin-left: 5px;
-    margin-right: 5px;
+	height: 2px;
+	background: #76797C;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 /*================================================================
 QToolbar
 ================================================================*/
 QToolBar {
-    border: 1px solid #393838;
-    background: 1px solid #272a2d;
-    font-weight: bold;
+	border: 1px solid #393838;
+	background: 1px solid #272a2d;
+	font-weight: bold;
 }
 
 QToolBar::handle:horizontal {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/Hmovetoolbar.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/Hmovetoolbar.png);
 }
 
 QToolBar::handle:vertical {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/Vmovetoolbar.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/Vmovetoolbar.png);
 }
 
 QToolBar::separator:horizontal {
-    width: 2px;
-    margin: 3px 10px;
-    background-color: #76797C;
+	width: 2px;
+	margin: 3px 10px;
+	background-color: #76797C;
 }
 
 QToolBar::separator:vertical {
-    height: 2px;
-    margin: 10px 3px;
-    background-color: #76797C;
+	height: 2px;
+	margin: 10px 3px;
+	background-color: #76797C;
 }
 
 /*================================================================
 QScrollBar
 ================================================================*/
 QScrollBar:horizontal {
-    height: 35px;
-    margin: 3px 30px 3px 30px;
-    border: 1px transparent #2A2929;
-    border-radius: 4px;
-    background-color: #000000;
+	height: 35px;
+	margin: 3px 30px 3px 30px;
+	border: 1px transparent #2A2929;
+	border-radius: 4px;
+	background-color: #000000;
 }
 
 QScrollBar::handle:horizontal {
-    background-color: #76797C;
-    min-width: 15px;
-    border-radius: 4px;
+	background-color: #76797C;
+	min-width: 15px;
+	border-radius: 4px;
 }
 
 QScrollBar::add-line:horizontal {
-    margin: 0px 3px 0px 3px;
-    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/right_arrow_disabled.png);
-    width: 20px;
-    height: 20px;
-    subcontrol-position: right;
-    subcontrol-origin: margin;
+	margin: 0px 3px 0px 3px;
+	border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/right_arrow_disabled.png);
+	width: 20px;
+	height: 20px;
+	subcontrol-position: right;
+	subcontrol-origin: margin;
 }
 
 QScrollBar::sub-line:horizontal {
-    margin: 0px 3px 0px 3px;
-    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/left_arrow_disabled.png);
-    height: 20px;
-    width: 20px;
-    subcontrol-position: left;
-    subcontrol-origin: margin;
+	margin: 0px 3px 0px 3px;
+	border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/left_arrow_disabled.png);
+	height: 20px;
+	width: 20px;
+	subcontrol-position: left;
+	subcontrol-origin: margin;
 }
 
 QScrollBar::add-line:horizontal:hover,
 QScrollBar::add-line:horizontal:on {
-    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/right_arrow.png);
-    height: 20px;
-    width: 20px;
-    subcontrol-position: right;
-    subcontrol-origin: margin;
+	border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/right_arrow.png);
+	height: 20px;
+	width: 20px;
+	subcontrol-position: right;
+	subcontrol-origin: margin;
 }
 
 QScrollBar::sub-line:horizontal:hover,
 QScrollBar::sub-line:horizontal:on {
-    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/left_arrow.png);
-    height: 20px;
-    width: 20px;
-    subcontrol-position: left;
-    subcontrol-origin: margin;
+	border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/left_arrow.png);
+	height: 20px;
+	width: 20px;
+	subcontrol-position: left;
+	subcontrol-origin: margin;
 }
 
 QScrollBar::up-arrow:horizontal,
 QScrollBar::down-arrow:horizontal {
-    background: none;
+	background: none;
 }
 
 QScrollBar::add-page:horizontal,
 QScrollBar::sub-page:horizontal {
-    background: none;
+	background: none;
 }
 
 QScrollBar:vertical {
-    background-color: #000000;
-    width: 35px;
-    margin: 30px 3px 30px 3px;
-    border: 1px solid #2A2929;
-    border-radius: 4px;
+	background-color: #000000;
+	width: 35px;
+	margin: 30px 3px 30px 3px;
+	border: 1px solid #2A2929;
+	border-radius: 4px;
 }
 
 QScrollBar::handle:vertical {
-    background-color: #76797C;
-    min-height: 15px;
-    border-radius: 4px;
+	background-color: #76797C;
+	min-height: 15px;
+	border-radius: 4px;
 }
 
 QScrollBar::sub-line:vertical {
-    margin: 3px 0px 3px 0px;
-    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/up_arrow_disabled.png);
-    height: 20px;
-    width: 20px;
-    subcontrol-position: top;
-    subcontrol-origin: margin;
+	margin: 3px 0px 3px 0px;
+	border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/up_arrow_disabled.png);
+	height: 20px;
+	width: 20px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
 }
 
 QScrollBar::add-line:vertical {
-    margin: 3px 0px 3px 0px;
-    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/down_arrow_disabled.png);
-    height: 20px;
-    width: 20px;
-    subcontrol-position: bottom;
-    subcontrol-origin: margin;
+	margin: 3px 0px 3px 0px;
+	border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/down_arrow_disabled.png);
+	height: 20px;
+	width: 20px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
 }
 
 QScrollBar::sub-line:vertical:hover,
 QScrollBar::sub-line:vertical:on {
-    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/up_arrow.png);
-    height: 20px;
-    width: 20px;
-    subcontrol-position: top;
-    subcontrol-origin: margin;
+	border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/up_arrow.png);
+	height: 20px;
+	width: 20px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
 }
 
 QScrollBar::add-line:vertical:hover,
 QScrollBar::add-line:vertical:on {
-    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/down_arrow.png);
-    height: 20px;
-    width: 20px;
-    subcontrol-position: bottom;
-    subcontrol-origin: margin;
+	border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/down_arrow.png);
+	height: 20px;
+	width: 20px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
 }
 
 QScrollBar::up-arrow:vertical,
 QScrollBar::down-arrow:vertical {
-    background: none;
+	background: none;
 }
 
 QScrollBar::add-page:vertical,
 QScrollBar::sub-page:vertical {
-    background: none;
+	background: none;
 }
 
 /*================================================================
 QTabBar - e.g. File tabs (top), Bottom panel tabs (top), Autocompleter window tabs (bottom)
 ================================================================*/
 QTabBar {
-    qproperty-drawBase: 0; /* important */
-    background-color: transparent;
+	qproperty-drawBase: 0; /* important */
+	background-color: transparent;
 }
 
 /* Workaround for QTabBars created from docked QDockWidgets which don't draw the border if not set and reseted as follows: */
 QTabBar {
-    border-top: 1px transparent #76797C;  /* set color for all QTabBars */
-}
-QDockWidget QTabBar {
-    border-color: transparent; /* set color for all QTabBars but ones created from QDockWidget */
+	border-top: 1px transparent #76797C;  /* set color for all QTabBars */
 }
 QDialog QTabBar {
-    border-color: transparent; /* set color for QTabBars inside Preferences dialog */
+	border-color: transparent; /* set color for QTabBars inside Preferences dialog */
 }
 /* end fix */
 
 QTabBar::close-button {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close.png);
-    background: transparent;
-    margin-top: 6px;
-    margin-bottom: 6px;
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close.png);
+	background: transparent;
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
 
 QTabBar::close-button:hover {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close-hover.png);
-    background: transparent;
-    margin-top: 6px;
-    margin-bottom: 6px;
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close-hover.png);
+	background: transparent;
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
 
 QTabBar::close-button:pressed {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close-pressed.png);
-    background: transparent;
-    margin-top: 6px;
-    margin-bottom: 6px;
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close-pressed.png);
+	background: transparent;
+	margin-top: 6px;
+	margin-bottom: 6px;
 }
 
 /* TOP TABS */
 
 QTabBar::tab:top {
-    color: #eff0f1;
-    border: 1px solid #76797C;
-    border-bottom: 1px transparent black;
-    background-color: #31363b;
-    padding: 5px;
-    min-width: 50px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+	color: #eff0f1;
+	border: 1px solid #76797C;
+	border-bottom: 1px transparent black;
+	background-color: #31363b;
+	padding: 5px;
+	min-width: 50px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
 }
 
 QTabBar::tab:top:selected {
-    color: #eff0f1;
-    background-color: #54575B;
-    border: 2px solid #76797C;
-    border-bottom: 3px solid #3daee9;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+	color: #eff0f1;
+	background-color: #54575B;
+	border: 2px solid #76797C;
+	border-bottom: 3px solid #3daee9;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
 }
 
 QTabBar::tab:top:!selected:hover {
-    background-color: #18465d;
+	background-color: #18465d;
 }
 
 /* BOTTOM TABS */
 
 QTabBar::tab:bottom {
-    color: #eff0f1;
-    border: 1px solid #76797C;
-    border-top: 1px transparent black;
-    background-color: #31363b;
-    padding: 5px;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
-    min-width: 50px;
+	color: #eff0f1;
+	border: 1px solid #76797C;
+	border-top: 1px transparent black;
+	background-color: #31363b;
+	padding: 5px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	min-width: 50px;
 }
 
 QTabBar::tab:bottom:selected {
-    color: #eff0f1;
-    background-color: #54575B;
-    border: 2px solid #76797C;
-    border-top: 3px solid #3daee9;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+	color: #eff0f1;
+	background-color: #54575B;
+	border: 2px solid #76797C;
+	border-top: 3px solid #3daee9;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
 }
 
 QTabBar::tab:bottom:!selected:hover {
-    background-color: #18465d;
+	background-color: #18465d;
 }
 
 /*================================================================
 QDockWidget - e.g. "Search" header in internal PDF viewer 
 ================================================================*/
 QDockWidget {
-    titlebar-close-icon: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
-    titlebar-normal-icon: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
+	titlebar-close-icon: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
+	titlebar-normal-icon: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
 }
 
 QDockWidget::title {
-    background: #373b3f; 
-    color: transparent;
-    border: 1px transparent;
-    text-align: left;
+	background: #373b3f; 
+	color: transparent;
+	border: 1px transparent;
+	text-align: left;
 }
 
 QDockWidget::close-button,
 QDockWidget::float-button {
-    border: transparent;
-    padding: 0px;
-    icon-size: 25px;
-    background: transparent;
+	border: transparent;
+	padding: 0px;
+	icon-size: 25px;
+	background: transparent;
 }
 
 QDockWidget::float-button {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/undock.png);
-    subcontrol-position: right center;
-    left: -50px;
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/undock.png);
+	subcontrol-position: right center;
+	left: -50px;
 }
 
 QDockWidget::close-button {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close.png);
-    subcontrol-position: right center;
-    left: -10px;
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close.png);
+	subcontrol-position: right center;
+	left: -10px;
 }
 
 QDockWidget::float-button:hover {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/undock-pressed.png);
-    subcontrol-position: right center;
-    left: -50px;
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/undock-pressed.png);
+	subcontrol-position: right center;
+	left: -50px;
 }
 
 QDockWidget::close-button:hover {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close-pressed.png);
-    subcontrol-position: right center;
-    left: -10px;
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close-pressed.png);
+	subcontrol-position: right center;
+	left: -10px;
 }
 
 QDockWidget::close-button:pressed {
-    padding: 2px -2px -2px 2px;
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close-pressed.png);
+	padding: 2px -2px -2px 2px;
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close-pressed.png);
 }
 
 QDockWidget::float-button:pressed {
-		padding: 2px -2px -2px 2px;
-		image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/undock-pressed.png);
+	padding: 2px -2px -2px 2px;
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/undock-pressed.png);
+}
+
+QDockWidget QListView {
+	outline: 0;
+	background: #272a2d;
+	alternate-background-color: #373b3f;
+	color: #eff0f1;
 }
 
 /*================================================================
@@ -479,7 +483,7 @@ QListView::item:!selected:hover,
 QTreeView::item:!selected:hover {
     background: #18465d;
     outline: 0;
-    color: #eff0f1
+    color: #eff0f1;
 }
 
 QListView::item:selected:hover,
@@ -740,31 +744,35 @@ QSlider - e.g. GUI scaling settings
 QSlider,
 QSlider:active,
 QSlider:!active {
-    border: none;
-    background-color: transparent;
+	border: none;
+	background-color: transparent;
 }
 
 QSlider::groove:horizontal {
-    height: 12px;
+	height: 12px;
 }
 
 QSlider::groove:vertical {
-    width: 12px;
+	width: 12px;
 }
 
 QSlider::handle:horizontal,
 QSlider::handle:vertical {
-    background-color: #db1c49;
-    border: 1px solid #db1c49;
-    width: 10px;
-    height: 15px;
-    border-radius: 8px;
+	background-color: #db1c49;
+	border: 1px solid #db1c49;
+	width: 10px;
+	height: 15px;
+	border-radius: 8px;
 }
 
 QSlider::handle:horizontal:hover,
 QSlider::handle:vertical:hover,
 QSlider::handle:horizontal:pressed,
 QSlider::handle:vertical:pressed {
-    border: 1px solid #A21538;
-    background-color: #A21538;
+	border: 1px solid #A21538;
+	background-color: #A21538;
 }
+
+/*================================================================
+END
+================================================================*/
