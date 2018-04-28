@@ -280,7 +280,7 @@ QScrollBar::sub-page:vertical {
 }
 
 /*================================================================
-QTabBar
+QTabBar - e.g. File tabs (top), Bottom panel tabs (top), Autocompleter window tabs (bottom)
 ================================================================*/
 QTabBar {
     qproperty-drawBase: 0; /* important */
@@ -336,8 +336,8 @@ QTabBar::tab:top {
 QTabBar::tab:top:selected {
     color: #eff0f1;
     background-color: #54575B;
-    border: 1px transparent #76797C;
-    border-bottom: 2px solid #3daee9;
+    border: 2px solid #76797C;
+    border-bottom: 3px solid #3daee9;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
@@ -362,8 +362,8 @@ QTabBar::tab:bottom {
 QTabBar::tab:bottom:selected {
     color: #eff0f1;
     background-color: #54575B;
-    border: 1px solid #76797C;
-    border-top: 2px solid #3daee9;
+    border: 2px solid #76797C;
+    border-top: 3px solid #3daee9;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
