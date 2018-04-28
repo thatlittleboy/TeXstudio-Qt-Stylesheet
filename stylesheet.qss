@@ -1,19 +1,29 @@
+/*
+Colour scheme used:
+- White (text): #eff0f1
+- Dark black (main bg): #272a2d
+- Lighter dark black (menu bar): #373b3f
+- Dark blue: #18465d
+- Gray: #76797C
+- Red (accents): #db1c49
+*/
+
 /*================================================================
 QWidget
 ================================================================*/
 QWidget {
-		color: #eff0f1;
-		background-color: #272a2d;
+	color: #eff0f1;
+	background-color: #272a2d;
     selection-background-color: #db1c49;
     selection-color: #eff0f1;
 }
 
-QWidget:item:hover {
+QWidget::item:hover {
     background-color: #18465d;
     color: #eff0f1;
 }
 
-QWidget:item:selected {
+QWidget::item:selected {
     background-color: #18465d;
 }
 
@@ -94,7 +104,7 @@ QMenuBar
 ================================================================*/
 QMenuBar {
     color: #eff0f1;
-		background-color: #373b3f;
+	background-color: #373b3f;
 }
 
 QMenuBar::item {
@@ -121,8 +131,8 @@ QMenu::separator {
 QToolbar
 ================================================================*/
 QToolBar {
-    border: 1px transparent #393838;
-    background: 1px solid #31363b;
+    border: 1px solid #393838;
+    background: 1px solid #272a2d;
     font-weight: bold;
 }
 
@@ -154,11 +164,11 @@ QScrollBar:horizontal {
     margin: 3px 30px 3px 30px;
     border: 1px transparent #2A2929;
     border-radius: 4px;
-    background-color: #2A2929;
+    background-color: #000000;
 }
 
 QScrollBar::handle:horizontal {
-    background-color: #605F5F;
+    background-color: #76797C;
     min-width: 15px;
     border-radius: 4px;
 }
@@ -210,15 +220,15 @@ QScrollBar::sub-page:horizontal {
 }
 
 QScrollBar:vertical {
-    background-color: #2A2929;
+    background-color: #000000;
     width: 35px;
     margin: 30px 3px 30px 3px;
-    border: 1px transparent #2A2929;
+    border: 1px solid #2A2929;
     border-radius: 4px;
 }
 
 QScrollBar::handle:vertical {
-    background-color: #605F5F;
+    background-color: #76797C;
     min-height: 15px;
     border-radius: 4px;
 }
@@ -336,32 +346,87 @@ QTabBar::tab:top:!selected:hover {
     background-color: #18465d;
 }
 
+/* BOTTOM TABS */
+
+QTabBar::tab:bottom {
+    color: #eff0f1;
+    border: 1px solid #76797C;
+    border-top: 1px transparent black;
+    background-color: #31363b;
+    padding: 5px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    min-width: 50px;
+}
+
+QTabBar::tab:bottom:selected {
+    color: #eff0f1;
+    background-color: #54575B;
+    border: 1px solid #76797C;
+    border-top: 2px solid #3daee9;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+QTabBar::tab:bottom:!selected:hover {
+    background-color: #18465d;
+}
+
 /*================================================================
-QDockWidget -- NOT WORKING
+QDockWidget - e.g. "Search" header in internal PDF viewer 
 ================================================================*/
 QDockWidget {
-    background: #db1c49;
-    border: 1px solid #403F3F;
-    titlebar-close-icon: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close.png);
-    titlebar-normal-icon: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/undock.png);
+    titlebar-close-icon: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
+    titlebar-normal-icon: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
+}
+
+QDockWidget::title {
+    background: #373b3f; 
+    color: transparent;
+    border: 1px transparent;
+    text-align: left;
 }
 
 QDockWidget::close-button,
 QDockWidget::float-button {
-    border: 1px solid transparent;
-    border-radius: 2px;
+    border: transparent;
+    padding: 0px;
+    icon-size: 25px;
     background: transparent;
 }
 
-QDockWidget::close-button:hover,
-QDockWidget::float-button:hover {
-    background: #db1c49;
+QDockWidget::float-button {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/undock.png);
+    subcontrol-position: right center;
+    left: -50px;
 }
 
-QDockWidget::close-button:pressed,
+QDockWidget::close-button {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close.png);
+    subcontrol-position: right center;
+    left: -10px;
+}
+
+QDockWidget::float-button:hover {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/undock-pressed.png);
+    subcontrol-position: right center;
+    left: -50px;
+}
+
+QDockWidget::close-button:hover {
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close-pressed.png);
+    subcontrol-position: right center;
+    left: -10px;
+}
+
+QDockWidget::close-button:pressed {
+    padding: 2px -2px -2px 2px;
+    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close-pressed.png);
+}
+
 QDockWidget::float-button:pressed {
-    padding: 1px -1px -1px 1px;
-    background: rgba(255, 255, 255, 10);
+	padding: 2px -2px -2px 2px;
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/undock-pressed.png);
 }
 
 /*================================================================
@@ -494,7 +559,7 @@ QPushButton:pressed {
 QComboBox
 ================================================================*/
 QComboBox {
-    selection-background-color: #3daee9;
+    selection-background-color: #db1c49;
     border-style: solid;
     border: 1px solid #76797C;
     border-radius: 2px;
@@ -648,4 +713,47 @@ QTableCornerButton::section {
     background-color: #31363b;
     border: 1px transparent #76797C;
     border-radius: 0px;
+}
+
+
+/*================================================================
+QDialog - e.g. config menu, About TXS window
+================================================================*/
+QDialog {
+	background-color: #373b3f;
+}
+
+/*================================================================
+QSlider - e.g. GUI scaling settings
+================================================================*/
+QSlider,
+QSlider:active,
+QSlider:!active {
+    border: none;
+    background-color: transparent;
+}
+
+QSlider::groove:horizontal {
+    height: 12px;
+}
+
+QSlider::groove:vertical {
+    width: 12px;
+}
+
+QSlider::handle:horizontal,
+QSlider::handle:vertical {
+    background-color: #db1c49;
+    border: 1px solid #db1c49;
+    width: 10px;
+    height: 15px;
+    border-radius: 8px;
+}
+
+QSlider::handle:horizontal:hover,
+QSlider::handle:vertical:hover,
+QSlider::handle:horizontal:pressed,
+QSlider::handle:vertical:pressed {
+    border: 1px solid #A21538;
+    background-color: #A21538;
 }
