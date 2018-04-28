@@ -12,8 +12,8 @@ Colour scheme used:
 QWidget
 ================================================================*/
 QWidget {
-	color: #eff0f1;
-	background-color: #272a2d;
+		color: #eff0f1;
+		background-color: #272a2d;
     selection-background-color: #db1c49;
     selection-color: #eff0f1;
 }
@@ -104,7 +104,7 @@ QMenuBar
 ================================================================*/
 QMenuBar {
     color: #eff0f1;
-	background-color: #373b3f;
+		background-color: #373b3f;
 }
 
 QMenuBar::item {
@@ -425,8 +425,8 @@ QDockWidget::close-button:pressed {
 }
 
 QDockWidget::float-button:pressed {
-	padding: 2px -2px -2px 2px;
-	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/undock-pressed.png);
+		padding: 2px -2px -2px 2px;
+		image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/undock-pressed.png);
 }
 
 /*================================================================
@@ -717,10 +717,15 @@ QTableCornerButton::section {
 
 
 /*================================================================
-QDialog - e.g. config menu, About TXS window
+QDialog - e.g. config menu, About TXS window, Wizards
 ================================================================*/
 QDialog {
-	background-color: #373b3f;
+		background-color: #373b3f;
+}
+
+QDialog QCheckBox,
+QDialog QLabel {
+		background-color: transparent;
 }
 
 /*================================================================
