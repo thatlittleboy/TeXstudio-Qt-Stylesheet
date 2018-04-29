@@ -6,6 +6,9 @@ Colour scheme used:
 - Dark blue: #18465d
 - Gray: #76797C
 - Red (accents): #db1c49
+
+Useful reference on QSS:
+ - http://doc.qt.io/qt-5/stylesheet-reference.html#alternate-background-color-prop
 */
 
 /*================================================================
@@ -438,68 +441,68 @@ QTreeView, QListView
 ================================================================*/
 QTreeView,
 QListView {
-    border: 1px solid #76797C;
-    background-color: #232629;
+	border: 1px solid #76797C;
+	background-color: #232629;
 }
 
 QTreeView:branch:selected,
 QTreeView:branch:hover {
-    background: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
+	background: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
 }
 
 QTreeView::branch:has-siblings:!adjoins-item {
-    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
+	border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
 }
 
 QTreeView::branch:has-siblings:adjoins-item {
-    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
+	border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
 }
 
 QTreeView::branch:!has-children:!has-siblings:adjoins-item {
-    border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
+	border-image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/transparent.png);
 }
 
 QTreeView::branch:has-children:!has-siblings:closed,
 QTreeView::branch:closed:has-children:has-siblings {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/branch_closed.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/branch_closed.png);
 }
 
 QTreeView::branch:open:has-children:!has-siblings,
 QTreeView::branch:open:has-children:has-siblings {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/branch_open.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/branch_open.png);
 }
 
 QTreeView::branch:has-children:!has-siblings:closed:hover,
 QTreeView::branch:closed:has-children:has-siblings:hover {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/branch_closed-on.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/branch_closed-on.png);
 }
 
 QTreeView::branch:open:has-children:!has-siblings:hover,
 QTreeView::branch:open:has-children:has-siblings:hover {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/branch_open-on.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/branch_open-on.png);
 }
 
 QListView::item:!selected:hover,
 QTreeView::item:!selected:hover {
-    background: #18465d;
-    outline: 0;
-    color: #eff0f1;
+	background: #18465d;
+	outline: 0;
+	color: #eff0f1;
 }
 
 QListView::item:selected:hover,
 QTreeView::item:selected:hover {
-    background: #287399;
-    color: #eff0f1;
+	background: #287399;
+	color: #eff0f1;
 }
 
 QTreeView::indicator:checked,
 QListView::indicator:checked {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked.png);
 }
 
 QTreeView::indicator:unchecked,
 QListView::indicator:unchecked {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked.png);
 }
 
 QTreeView::indicator:checked:hover,
@@ -508,7 +511,7 @@ QTreeView::indicator:checked:pressed,
 QListView::indicator:checked:hover,
 QListView::indicator:checked:focus,
 QListView::indicator:checked:pressed {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked_focus.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_checked_focus.png);
 }
 
 QTreeView::indicator:unchecked:hover,
@@ -517,62 +520,69 @@ QTreeView::indicator:unchecked:pressed,
 QListView::indicator:unchecked:hover,
 QListView::indicator:unchecked:focus,
 QListView::indicator:unchecked:pressed {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked_focus.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/checkbox_unchecked_focus.png);
 }
 
 /*================================================================
 QPushButton
 ================================================================*/
 QPushButton {
-    color: #eff0f1;
-    background-color: #31363b;
-    border-width: 1px;
-    border-color: #76797C;
-    border-style: solid;
-    padding: 5px;
-    border-radius: 2px;
-    outline: none;
+	color: #eff0f1;
+	background-color: #31363b;
+	border-width: 1px;
+	border-color: #76797C;
+	border-style: solid;
+	padding: 5px;
+	border-radius: 2px;
+	outline: none;
 }
 
 QPushButton:disabled {
-    background-color: #31363b;
-    border-width: 1px;
-    border-color: #454545;
-    border-style: solid;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 2px;
-    color: #454545;
+	background-color: #31363b;
+	border-width: 1px;
+	border-color: #454545;
+	border-style: solid;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 2px;
+	color: #454545;
 }
 
 QPushButton:hover,
 QPushButton:focus {
-    background-color: #18465d;
-    color: white;
+	background-color: #18465d;
+	color: #ffffff;
 }
 
 QPushButton:pressed {
-    background-color: #18465d;
-    padding-top: -15px;
-    padding-bottom: -17px;
+	background-color: #18465d;
+	padding-top: -15px;
+	padding-bottom: -17px;
+}
+
+/*================================================================
+QToolButton - e.g. Reset pushbutton in GUI scaling, toolbar buttons
+================================================================*/
+QToolButton {
+	text-align: center;
 }
 
 /*================================================================
 QComboBox
 ================================================================*/
 QComboBox {
-    selection-background-color: #db1c49;
-    border: 1px solid #76797C;
-    border-radius: 2px;
-    padding: 5px;
-    min-width: 75px;
+	selection-background-color: #db1c49;
+	border: 1px solid #76797C;
+	border-radius: 2px;
+	padding: 5px;
+	min-width: 75px;
 }
 
 QPushButton:checked {
-    background-color: #76797C;
-    border-color: #6A6969;
+	background-color: #76797C;
+	border-color: #6A6969;
 }
 
 QComboBox:hover,
@@ -583,159 +593,182 @@ QTextEdit:hover,
 QPlainTextEdit:hover,
 QAbstractView:hover,
 QTreeView:hover {
-    border: 1px solid #3daee9;
-    color: #eff0f1;
+	border: 1px solid #3daee9;
+	color: #eff0f1;
 }
 
 QComboBox:on {
-    padding-top: 3px;
-    padding-left: 4px;
-    selection-background-color: #4a4a4a;
+	padding-top: 3px;
+	padding-left: 4px;
+	selection-background-color: #4a4a4a;
 }
 
 QComboBox QAbstractItemView {
-    background-color: #232629;
-    border-radius: 2px;
-    border: 1px solid #76797C;
-    selection-background-color: #18465d;
+	background-color: #232629;
+	border-radius: 2px;
+	border: 1px solid #76797C;
+	selection-background-color: #18465d;
 }
 
 QComboBox::drop-down {
-    subcontrol-origin: padding;
-    subcontrol-position: top right;
-    width: 35px;
-    border-left-width: 0px;
-    border-left-color: darkgray;
-    border-left-style: solid;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+	subcontrol-origin: padding;
+	subcontrol-position: top right;
+	width: 35px;
+	border-left-width: 0px;
+	border-left-color: darkgray;
+	border-left-style: solid;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
 }
 
 QComboBox::down-arrow {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/down_arrow_disabled.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/down_arrow_disabled.png);
 }
 
 QComboBox::down-arrow:on,
 QComboBox::down-arrow:hover,
 QComboBox::down-arrow:focus {
-    image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/down_arrow.png);
+	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/down_arrow.png);
 }
 
 /*================================================================
 QLineEdit - e.g. Search textbox in internal pdf viewer
 ================================================================*/
 QLineEdit {
-    selection-background-color: #db1c49;
-    border: 1px solid #76797C;
+	selection-background-color: #db1c49;
+	border: 1px solid #76797C;
 }
 
 /*================================================================
 QHeaderView
 ================================================================*/
 QHeaderView {
-    background-color: #31363b;
-    border: 1px transparent;
-    border-radius: 0px;
-    margin: 0px;
-    padding: 0px;
+	background-color: #31363b;
+	border: 1px transparent;
+	border-radius: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 QHeaderView::section {
-    background-color: #31363b;
-    color: #eff0f1;
-    padding: 5px;
-    border: 1px solid #76797C;
-    border-radius: 0px;
-    text-align: center;
+	background-color: #31363b;
+	color: #eff0f1;
+	padding: 5px;
+	border: 1px solid #76797C;
+	border-radius: 0px;
+	text-align: center;
 }
 
 QHeaderView::section::vertical::first,
 QHeaderView::section::vertical::only-one {
-    border-top: 1px solid #76797C;
+	border-top: 1px solid #76797C;
 }
 
 QHeaderView::section::vertical {
-    border-top: transparent;
+	border-top: transparent;
 }
 
 QHeaderView::section::horizontal::first,
 QHeaderView::section::horizontal::only-one {
-    border-left: 1px solid #76797C;
+	border-left: 1px solid #76797C;
 }
 
 QHeaderView::section::horizontal {
-    border-left: transparent;
+	border-left: transparent;
 }
 
 QHeaderView::section:checked {
-    color: white;
-    background-color: #31363B;
+	color: #ffffff;
+	background-color: #31363B;
 }
 
 /*================================================================
 QTableWidget
 ================================================================*/
 QTableWidget {
-		background-color: #232629;
-    gridline-color: #31363b;
+	background-color: #232629;
+	gridline-color: #31363b;
 }
 
 QTableWidget::item {
-		outline-style: none;
-		color: #eff0f1;
-		background: #31363b;
-		border: none;
-    border-bottom: 1px solid #31363b;
+	outline-style: none;
+	color: #eff0f1;
+	background: #31363b;
+	border: none;
+	border-bottom: 1px solid #31363b;
 }
 
 QTableWidget::item:hover {
-    background: #E0401E;
+	background: #E0401E;
 }
 
 /*================================================================
 QTableView
 ================================================================*/
 QTableView {
-    border: 1px solid #76797C;
-    gridline-color: #31363b;
-    background-color: #232629;
+	border: 1px solid #76797C;
+	gridline-color: #31363b;
+	background-color: #232629;
 }
 
 QTableView,
 QHeaderView {
-    border-radius: 0px;
+	border-radius: 0px;
 }
 
 QTableView::item:pressed,
 QListView::item:pressed,
 QTreeView::item:pressed {
-    background: #18465d;
-    color: #eff0f1;
+	background: #18465d;
+	color: #eff0f1;
 }
 
 QTableView::item:selected:active,
 QTreeView::item:selected:active,
 QListView::item:selected:active {
-    background: #287399;
-    color: #eff0f1;
+	background: #287399;
+	color: #eff0f1;
 }
 
 QTableCornerButton::section {
-    background-color: #31363b;
-    border: 1px transparent #76797C;
-    border-radius: 0px;
+	background-color: #31363b;
+	border: 1px transparent #76797C;
+	border-radius: 0px;
 }
 
 /*================================================================
 QDialog - e.g. config menu, About TXS window, Wizards
 ================================================================*/
 QDialog {
-		background-color: #373b3f;
+	background-color: #373b3f;
 }
 
 QDialog QCheckBox,
 QDialog QLabel {
-		background-color: transparent;
+	background-color: transparent;
+}
+
+QDialog QToolButton { /*Same as QPushButton*/
+	color: #eff0f1;
+	background-color: #31363b;
+	border-width: 1px;
+	border-color: #76797C;
+	border-style: solid;
+	padding: 5px;
+	border-radius: 2px;
+	outline: none;
+}
+
+QDialog QToolButton:hover,
+QDialog QToolButton:focus { /*Same as QPushButton*/
+	background-color: #18465d;
+	color: #ffffff;
+}
+
+QDialog QToolButton:pressed { /*Same as QPushButton*/
+	background-color: #18465d;
+	padding-top: -15px;
+	padding-bottom: -17px;
 }
 
 /*================================================================
