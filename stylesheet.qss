@@ -686,8 +686,8 @@ QHeaderView::section:checked {
 QTableWidget
 ================================================================*/
 QTableWidget {
-	background-color: #232629;
-	gridline-color: #31363b;
+	background-color: #373b3f; /*#232629;*/
+	gridline-color: yellow; /*#31363b;*/
 }
 
 QTableWidget::item {
@@ -698,12 +698,8 @@ QTableWidget::item {
 	border-bottom: 1px solid #31363b;
 }
 
-QTableWidget::item:hover {
-	background: #E0401E;
-}
-
 /*================================================================
-QTableView
+QTableView - e.g. configMenu()->Syntax highlighting table
 ================================================================*/
 QTableView {
 	border: 1px solid #76797C;
@@ -714,6 +710,10 @@ QTableView {
 QTableView,
 QHeaderView {
 	border-radius: 0px;
+}
+
+QTableView::item:hover {
+	background: #18465d;
 }
 
 QTableView::item:pressed,
@@ -770,6 +770,15 @@ QDialog QToolButton:pressed { /*Same as QPushButton*/
 	padding-top: -15px;
 	padding-bottom: -17px;
 }
+
+/* <FIX> Specific to table in "configMenu->Syntax highlighting" (hopefully) */
+
+QDialog QTableWidget::item,
+QDialog QTableView::item:hover { /* Turn off hover colour for cells -- it's distracting */
+	background-color: #31363b;
+}
+
+/* </FIX> */
 
 /*================================================================
 QSlider - e.g. GUI scaling settings
