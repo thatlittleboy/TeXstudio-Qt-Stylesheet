@@ -1,8 +1,12 @@
-# TeXstudio-QSS-Stylesheet
-Dark mode QSS stylesheet (WIP). Built around a dark colour scheme (majority being different shades of gray and dark blue), with red and blue accents. Also red text highlighting, instead of the default Windows blue. `:)`
+# TeXstudio-Qt-Stylesheet
+Dark mode Qt stylesheet (WIP). Built around a dark colour scheme (majority being different shades of gray and dark blue), with red and blue accents. Also red text highlighting, instead of the default Windows blue. `:)`
 
 Slightly modified from (and credits to):
 - https://github.com/ColinDuquesnoy/QDarkStyleSheet/tree/master/qdarkstyle
+
+## To Use:
+Place `stylesheet.qss` and the `rc` folder into [TXS config folder](https://github.com/texstudio-org/texstudio/wiki/Frequently-Asked-Questions#where-are-the-settings-stored).
+
 
 ## Sample images:
 
