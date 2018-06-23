@@ -103,7 +103,7 @@ QGroupBox::indicator:unchecked:disabled {
 }
 
 /*================================================================
-QMenuBar
+QMenuBar - e.g. Main toolbar (file/edit/idefix etc.)
 ================================================================*/
 QMenuBar {
 	color: #eff0f1;
@@ -160,7 +160,7 @@ QToolBar::separator:vertical {
 }
 
 /*================================================================
-QScrollBar
+QScrollBar - e.g. Scrollbar in internal PDFviewer, editor window etc.
 ================================================================*/
 QScrollBar:horizontal {
 	height: 35px;
@@ -290,14 +290,14 @@ QTabBar {
 	background-color: transparent;
 }
 
-/* Workaround for QTabBars created from docked QDockWidgets which don't draw the border if not set and reseted as follows: */
+/* <FIX> Workaround for QTabBars created from docked QDockWidgets which don't draw the border if not set and reseted as follows: */
 QTabBar {
 	border-top: 1px transparent #76797C;  /* set color for all QTabBars */
 }
 QDialog QTabBar {
 	border-color: transparent; /* set color for QTabBars inside Preferences dialog */
 }
-/* end fix */
+/* </FIX> */
 
 QTabBar::close-button {
 	image: url(C:/Users/user/AppData/Roaming/TeXstudio/rc/close.png);
@@ -562,6 +562,11 @@ QPushButton:pressed {
 	padding-bottom: -17px;
 }
 
+QPushButton:checked {
+	background-color: #76797C;
+	border-color: #6A6969;
+}
+
 /*================================================================
 QToolButton - e.g. Reset pushbutton in GUI scaling, toolbar buttons
 ================================================================*/
@@ -578,11 +583,6 @@ QComboBox {
 	border-radius: 2px;
 	padding: 5px;
 	min-width: 75px;
-}
-
-QPushButton:checked {
-	background-color: #76797C;
-	border-color: #6A6969;
 }
 
 QComboBox:hover,
@@ -813,6 +813,16 @@ QSlider::handle:horizontal:pressed,
 QSlider::handle:vertical:pressed {
 	border: 1px solid #A21538;
 	background-color: #A21538;
+}
+
+/*================================================================
+QToolTip - e.g. popup upon hovering on filename tabs
+================================================================*/
+QToolTip {
+    border: 1px solid #272a2d;
+    background-color: #373b3f;
+    color: white;
+    padding: 0px;                /*remove padding, for fix combobox tooltip.*/
 }
 
 /*================================================================
