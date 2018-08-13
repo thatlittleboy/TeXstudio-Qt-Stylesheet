@@ -58,6 +58,6 @@ Stylesheet does not set (i) the background colour and syntax highlighting of the
 
 ## To Do / Unsure how to fix at the moment:
 - Symbols side panel and a few icons are black (on transparent background?), thus are hard to see with the dark background of everything else (c.f. `Math -> Math Accents`). Whereas others (c.f. `LaTeX -> Font Styles`) are fine;
-- Table in `Config TeXstudio -> Syntax Highlighting` is a mess.. Not sure how much of it can be influenced/fixed by QSS;
+- <s>Table in `Config TeXstudio -> Syntax Highlighting` is a mess.. Not sure how much of it can be influenced/fixed by QSS;</s> Fixed since [git_0ba02d0](https://github.com/texstudio-org/texstudio/commit/0ba02d0250a6ffb1a9302966ff8820194e17d336).
 - Some pop-up dialogs still not inheriting the QSS, (c.f. `Edit Macros` dialog, `Select Color` dialog);
 - The "right-click context menu" not inheriting QSS as well;
