@@ -13,17 +13,20 @@ For **best effects** (cf. sample images): I would recommend using the following 
 - `General -> Color Scheme -> Modern` (instead of Classic);
 - `Syntax Highlighting`: Choose a dark colour scheme you like from [How can I set a dark theme in TeXstudio?](https://tex.stackexchange.com/q/108315)
 
-**Optionally/Personal taste:** Change the internal PDF viewer background colour, and the internal PDF viewer highlight colour. You can customize this in `Options -> Configure TeXstudio -> Internal PDF viewer -> Paper Color` and `Highlight Color`. You'll need `Show Advanced Options` checked in the bottom left hand corner of the config dialog to see these options.
+**Optionally/Personal taste:** Change the internal PDF viewer _background_ colour, and the internal PDF viewer _highlight_ colour. You can customize this in `Options -> Configure TeXstudio -> Internal PDF viewer -> Paper Color` and `Highlight Color`. You'll need `Show Advanced Options` checked in the bottom left hand corner of the config dialog to see these options.
 
 ## Sample images:
 
 **Main text editor and internal pdf viewer**
+
 <img src=https://github.com/thatlittleboy/TeXstudio-Qt-Stylesheet/blob/master/sample%20imgs/editor%20and%20pdf%20viewer.png>
 
 **Menu**
+
 <img src=https://github.com/thatlittleboy/TeXstudio-Qt-Stylesheet/blob/master/sample%20imgs/menu.png width=650px>
 
 **Config Dialog**
+
 <img src=https://github.com/thatlittleboy/TeXstudio-Qt-Stylesheet/blob/master/sample%20imgs/config%20menu.png>
 
 <!--
@@ -60,9 +63,12 @@ For **best effects** (cf. sample images): I would recommend using the following 
 -->
 
 ### Disclaimer
-Stylesheet does not set
+Stylesheet _does not_ set
+
 (i) the background colour and syntax highlighting of the editor window (mine is modified from Solarized Dark theme),
+
 (ii) the internal PDF viewer background colour, and
+
 (iii) the internal PDF viewer highlight colour. For that, set it from within the TXS settings (or modify `texstudio.ini`), described above.
 
 ## To Do / Unsure how to fix at the moment:
