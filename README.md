@@ -6,7 +6,8 @@ Slightly modified from (and credits to):
 
 ## To Use:
 **Mandatory:**
-Place `stylesheet.qss` and the `rc` folder into [TXS config folder](https://github.com/texstudio-org/texstudio/wiki/Frequently-Asked-Questions#where-are-the-settings-stored).
+- Place `stylesheet.qss` and the `rc` folder into [TXS config folder](https://github.com/texstudio-org/texstudio/wiki/Frequently-Asked-Questions#where-are-the-settings-stored).
+- Replace C:/Users/**user**/AppData/Roaming/TeXstudio/rc/ with your name in the stylesheet
 
 For **best effects** (cf. sample images): I would recommend using the following settings (change under `Options -> Configure TeXstudio`):
 - `General -> Color Scheme -> Modern` (instead of Classic);
