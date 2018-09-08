@@ -17,9 +17,14 @@ For **best effects** (cf. sample images): I would recommend using the following 
 
 ## Sample images:
 
-![](https://github.com/thatlittleboy/TeXstudio-QSS-Stylesheet/blob/master/sample%20imgs/editor%20and%20pdf%20viewer.png)
+**Main text editor and internal pdf viewer**
+<img src=https://github.com/thatlittleboy/TeXstudio-Qt-Stylesheet/blob/master/sample%20imgs/editor%20and%20pdf%20viewer.png>
 
-![](https://github.com/thatlittleboy/TeXstudio-QSS-Stylesheet/blob/master/sample%20imgs/config%20menu.png)
+**Menu**
+<img src=https://github.com/thatlittleboy/TeXstudio-Qt-Stylesheet/blob/master/sample%20imgs/menu.png width=650px>
+
+**Config Dialog**
+<img src=https://github.com/thatlittleboy/TeXstudio-Qt-Stylesheet/blob/master/sample%20imgs/config%20menu.png>
 
 <!--
 <table style="width:100%">
@@ -55,10 +60,13 @@ For **best effects** (cf. sample images): I would recommend using the following 
 -->
 
 ### Disclaimer
-Stylesheet does not set (i) the background colour and syntax highlighting of the editor window (mine is modified from Solarized Dark theme), (ii) the internal PDF viewer background colour and (iii) the internal PDF viewer highlight colour. For that, set it from within the TXS settings (or modify `texstudio.ini`), described above.
+Stylesheet does not set
+(i) the background colour and syntax highlighting of the editor window (mine is modified from Solarized Dark theme),
+(ii) the internal PDF viewer background colour, and
+(iii) the internal PDF viewer highlight colour. For that, set it from within the TXS settings (or modify `texstudio.ini`), described above.
 
 ## To Do / Unsure how to fix at the moment:
-- Symbols side panel and a few icons are black (on transparent background?), thus are hard to see with the dark background of everything else (c.f. `Math -> Math Accents`). Whereas others (c.f. `LaTeX -> Font Styles`) are fine;
+- Symbols side panel and a few icons are black (on transparent background?), thus are hard to see with the dark background of everything else (cf. `Math -> Math Accents`). Whereas others (cf. `LaTeX -> Font Styles`) are fine;
 - <s>Table in `Config TeXstudio -> Syntax Highlighting` is a mess.. Not sure how much of it can be influenced/fixed by QSS;</s> Fixed since [git_0ba02d0](https://github.com/texstudio-org/texstudio/commit/0ba02d0250a6ffb1a9302966ff8820194e17d336).
-- Some pop-up dialogs still not inheriting the QSS, (c.f. `Edit Macros` dialog, `Select Color` dialog);
-- The "right-click context menu" not inheriting QSS as well;
+- Some pop-up dialogs still not inheriting the QSS, (cf. `Edit Macros` dialog, `Select Color` dialog);
+- The "right-click context menu" in the editor not inheriting QSS as well (the "right-click" context menu on the internal pdf viewer, inherits it fine, however);
