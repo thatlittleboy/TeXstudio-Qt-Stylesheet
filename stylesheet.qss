@@ -9,6 +9,8 @@ Colour scheme used:
 
 Useful reference on QSS:
  - http://doc.qt.io/qt-5/stylesheet-reference.html#alternate-background-color-prop
+
+Be sure to change all image urls to the appropriate folder on your system.
 */
 
 /*================================================================
@@ -163,8 +165,8 @@ QToolBar::separator:vertical {
 QScrollBar - e.g. Scrollbar in internal PDFviewer, editor window etc.
 ================================================================*/
 QScrollBar:horizontal {
-	height: 35px;
-	margin: 3px 30px 3px 30px;
+	height: 25px;
+	margin: 3px 27px 3px 27px;
 	border: 1px transparent #2A2929;
 	border-radius: 4px;
 	background-color: #000000;
@@ -224,8 +226,8 @@ QScrollBar::sub-page:horizontal {
 
 QScrollBar:vertical {
 	background-color: #000000;
-	width: 35px;
-	margin: 30px 3px 30px 3px;
+	width: 25px;
+	margin: 27px 3px 27px 3px;
 	border: 1px solid #2A2929;
 	border-radius: 4px;
 }
