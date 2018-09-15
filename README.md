@@ -4,17 +4,6 @@ Dark mode Qt stylesheet (WIP), developed primarily for TeXstudio, a LaTeX editor
 Slightly modified from (and credits to):
 - https://github.com/ColinDuquesnoy/QDarkStyleSheet/tree/master/qdarkstyle
 
-## To Use:
-**Mandatory:**
-- Place `stylesheet.qss` and the `rc` folder into [TXS config folder](https://github.com/texstudio-org/texstudio/wiki/Frequently-Asked-Questions#where-are-the-settings-stored).
-- Replace C:/Users/**user**/AppData/Roaming/TeXstudio/rc/ with your name in the stylesheet
-
-For **best effects** (cf. sample images): I would recommend using the following settings (change under `Options -> Configure TeXstudio`):
-- `General -> Color Scheme -> Modern` (instead of Classic);
-- `Syntax Highlighting`: Choose a dark colour scheme you like from [How can I set a dark theme in TeXstudio?](https://tex.stackexchange.com/q/108315)
-
-**Optionally/Personal taste:** Change the internal PDF viewer _background_ colour, and the internal PDF viewer _highlight_ colour. You can customize this in `Options -> Configure TeXstudio -> Internal PDF viewer -> Paper Color` and `Highlight Color`. You'll need `Show Advanced Options` checked in the bottom left hand corner of the config dialog to see these options.
-
 ## Sample images:
 
 **Main text editor and internal pdf viewer**
@@ -62,14 +51,45 @@ For **best effects** (cf. sample images): I would recommend using the following 
 </table>
 -->
 
-### Disclaimer
-Stylesheet _does not_ set
+
+## To Use:
+**Mandatory:**
+- Place `stylesheet.qss` and the `rc` folder into [TXS config folder](https://github.com/texstudio-org/texstudio/wiki/Frequently-Asked-Questions#where-are-the-settings-stored).
+- Replace C:/Users/**user**/AppData/Roaming/TeXstudio/rc/ with your name in the stylesheet
+
+For **best effects** (cf. sample images): I would recommend using the following settings (change under `Options -> Configure TeXstudio`):
+- `General -> Color Scheme -> Modern` (instead of Classic);
+- `Syntax Highlighting`: Choose a dark colour scheme you like from [How can I set a dark theme in TeXstudio?](https://tex.stackexchange.com/q/108315)
+
+**Optionally/Personal taste:** Change the internal PDF viewer _background_ colour, and the internal PDF viewer _highlight_ colour. These are not controlled by the Qt Stylesheet; You can customize this in `Options -> Configure TeXstudio -> Internal PDF viewer -> Paper Color` and `Highlight Color`. You'll need `Show Advanced Options` checked in the bottom left hand corner of the config dialog to see these options.
+
+I have also provided a `texstudio.ini` file that should give your TeXstudio the complete look: it has all default settings except for 3 things:
 
 (i) the background colour and syntax highlighting of the editor window (mine is modified from Solarized Dark theme),
+```
+[formats]
+version=1.0
+data\align-ampersand\bold=true
+data\align-ampersand\fontFamily=
+...
+...
+...
+data\braceMatch\wrapAround=false
+```
+(see the provided `texstudio.ini` for the full list -- just grab everything below `[formats]`).
 
-(ii) the internal PDF viewer background colour, and
+(ii) the internal PDF viewer background colour (a slight yellowish colour), and
 
-(iii) the internal PDF viewer highlight colour. For that, set it from within the TXS settings (or modify `texstudio.ini`), described above.
+```
+Preview\PaperColor=#faffcf
+```
+
+(iii) the internal PDF viewer highlight colour (pale blue).
+```
+Preview\HighlightColor=#77b8f93F
+```
+
+If you don't want to override your current settings by using the provided `texstudio.ini` file, you can just replace the corresponding lines within your `texstudio.ini` instead.
 
 ## To Do / Unsure how to fix at the moment:
 - Symbols side panel and a few icons are black (on transparent background?), thus are hard to see with the dark background of everything else (cf. `Math -> Math Accents`). Whereas others (cf. `LaTeX -> Font Styles`) are fine;
